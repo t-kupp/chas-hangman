@@ -22,7 +22,6 @@ while (wrongGuesses < maxGuesses) {
   // Prompt the user for a guess and check its validity. Prompt for a new guess if invalid.
   do {
     guess = prompt(`Your word is: ${hiddenWord.join(" ")}\nYou guessed: ${guessedCharacters.join(" ")}\n\nGuess a character:`).toLowerCase();
-    console.log(guess);
 
     // Check user guess validity
     if (!checkGuess(guess)) {
